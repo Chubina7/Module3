@@ -9,6 +9,10 @@ export default function Home() {
       <div>MTAVARI KONTENTI</div>
       <div>MTAVARI KONTENTI</div>
       <div>MTAVARI KONTENTI</div>
+      {/* es aris komentari */}
+      <div>checking ne wbranch</div>
+      <h1>Web developers check</h1>
+      <p>123456789</p>
     </main>
   )
 }
