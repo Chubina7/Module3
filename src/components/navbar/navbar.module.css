@@ -1,0 +1,13 @@
+.container {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
