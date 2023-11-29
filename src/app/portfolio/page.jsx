@@ -1,7 +1,10 @@
 import React from 'react'
+import styles from './page.module.css'
 
-export default function Portfolio() {
+export default function Porfolio() {
   return (
-    <div>This is Portfolio page</div>
+    <main className={styles.main}>
+      <h1>ეს არის პორტფოლიო</h1>
+    </main>
   )
 }
