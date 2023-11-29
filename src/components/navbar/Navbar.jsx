@@ -14,7 +14,7 @@ export default function Navbar() {
     <div className={styles.container}>
       <div>Main</div>
       <div className={styles.links}>
-        {links.map(link => (<div>{link.title}</div>))}
+        {links.map(link => <div>{link.title}</div>)}
       </div>
     </div>
   )
