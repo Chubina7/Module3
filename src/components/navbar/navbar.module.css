@@ -6,6 +6,7 @@
   padding: 20px 0;
 }
 .logo {
+  font-size: 24px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -16,5 +17,13 @@
   gap: 20px;
 }
 .eachLink {
+  cursor: pointer;
+}
+.logOutBtn {
+  padding: 5px;
+  border-radius: 6px;
+  border: none;
+  background-color: #538c53;
+  color: white;
   cursor: pointer;
 }
