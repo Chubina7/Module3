@@ -5,7 +5,7 @@ import styles from './footer.module.css'
 export default function Footer() {
   return (
     <div className={styles.footer}>
-      <span>@All rights deserved</span>
+      <span>@ All rights deserved</span>
       <div className={styles.socialNetworks}>
         <Image src={'/1.png'} width={20} height={20} alt={'facebooks'}  className={styles.icon} />
         <Image src={'/2.png'} width={20} height={20} alt={'instagram'} className={styles.icon} />

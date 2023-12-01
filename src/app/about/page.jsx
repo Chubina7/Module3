@@ -21,6 +21,44 @@ export default function About() {
           </h2>
         </div>
       </div>
+      <div className={styles.textContainer}>
+        <section className={styles.textSection}>
+          <h1 className={styles.textTitle}>Who Are We?</h1>
+          <p className={styles.textDescription}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            quae dolor, optio voluptatibus magnam iure esse tempora beatae.
+            <br />
+            <br />
+            A suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
+            eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ducimus quae dolor, optio voluptatibus magnam iure esse tempora
+            beatae, a suscipit eos. Animi quibusdam cum omnis officiis
+            <br />
+            <br />
+            voluptatum quo ea eveniet? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ducimus quae dolor, optio voluptatibus magnam iure
+            esse tempora beatae, a suscipit eos. Animi quibusdam cum omnis
+            officiis voluptatum quo ea eveniet?
+          </p>
+        </section>
+        <section className={styles.textSection}>
+          <h1 className={styles.textTitle}>What We Do?</h1>
+          <p className={styles.textDescription}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            quae dolor, optio voluptatibus magnam iure esse tempora beatae, a
+            suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
+            eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. -
+            Creative Illustrations
+            <br />
+            <br /> - Dynamic Websites
+            <br />
+            <br /> - Fast and Handy
+            <br />
+            <br /> - Mobile Apps
+          </p>
+          <button className={styles.textBtn}>Contact</button>
+        </section>
+      </div>
     </main>
   );
 }
