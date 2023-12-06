@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
+import Button from "../../components/button/Button";
 
 export default function About() {
   return (
@@ -56,7 +57,7 @@ export default function About() {
             <br />
             <br /> - Mobile Apps
           </p>
-          <button className={styles.textBtn}>Contact</button>
+          <Button title={"Contact"} />
         </section>
       </div>
     </main>
