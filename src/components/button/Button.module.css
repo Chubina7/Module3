@@ -1,0 +1,9 @@
+.textBtn {
+  background-color: #33c28b;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
