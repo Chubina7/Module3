@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Test() {
+export default function BlogPost() {
   return (
-    <div>page</div>
+    <div>Exact blog</div>
   )
 }

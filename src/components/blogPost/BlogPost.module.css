@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.imgCont {
+  width: 300px;
+  height: fit-content;
+  text-align: center;
+}
+.img {
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.desc {
+  opacity: 60%;
+}
