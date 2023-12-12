@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import styles from "./page.module.css";
 
-export default function Category() {
+export default function Category({ params }) {
   return (
-    <div>Category</div>
-  )
+    <main className={styles.main}>
+      <h1>{params.category}</h1>
+    </main>
+  );
 }
