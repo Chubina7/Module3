@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./navbar.module.css";
 import Link from "next/link";
+import DarkModeToggler from "../darkModeToggler/DarkModeToggler";
 
 export default function Navbar() {
   const links = [
@@ -14,8 +15,11 @@ export default function Navbar() {
 
   return (
     <div className={styles.container}>
-      <Link href='/' className={styles.logo}>Lamamia</Link>
+      <Link href="/" className={styles.logo}>
+        Lamamia
+      </Link>
       <div className={styles.links}>
+        <DarkModeToggler />
         {links.map((link) => (
           <Link href={link.url} className={styles.eachLink}>
             {link.title}
