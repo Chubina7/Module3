@@ -30,7 +30,7 @@ export default function Blog() {
         accusantium eveniet molestias at cum nisi ab? Ea eligendi animi itaque
         quam!"
         src="https://images.pexels.com/photos/17664144/pexels-photo-17664144/free-photo-of-a-black-and-white-photo-of-a-stream-in-the-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        id="1"
+        id="3"
       />
       <BlogPost
         title="Navigating the digital frontier: The art of user experience"
@@ -39,7 +39,7 @@ export default function Blog() {
         accusantium eveniet molestias at cum nisi ab? Ea eligendi animi itaque
         quam! sequi dignissimos excepturi odio. Tenetur "
         src="https://images.pexels.com/photos/6714/light-forest-trees-morning.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        id="2"
+        id="4"
       />
       <BlogPost
         title="Unlocking digital succses With the power of creative strategy"
@@ -48,7 +48,7 @@ export default function Blog() {
         accusantium eveniet molestias at cum nisi ab? Ea eligendi animi itaque
         quam!"
         src="https://images.pexels.com/photos/17664144/pexels-photo-17664144/free-photo-of-a-black-and-white-photo-of-a-stream-in-the-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        id="1"
+        id="5"
       />
       <BlogPost
         title="Navigating the digital frontier: The art of user experience"
@@ -57,7 +57,7 @@ export default function Blog() {
         accusantium eveniet molestias at cum nisi ab? Ea eligendi animi itaque
         quam! sequi dignissimos excepturi odio. Tenetur "
         src="https://images.pexels.com/photos/6714/light-forest-trees-morning.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        id="2"
+        id="6"
       />
     </main>
   );
