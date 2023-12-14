@@ -1,4 +1,5 @@
 .container {
+  user-select: none;
   width: 42px;
   height: 24px;
   border: 1.5px solid #53c18b70;
@@ -16,8 +17,8 @@
 }
 
 .ball {
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   background-color: #53c28b;
   border-radius: 50px;
   position: absolute;
