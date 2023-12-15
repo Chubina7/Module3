@@ -2,63 +2,34 @@ import React from "react";
 import styles from "./page.module.css";
 import BlogPost from "@/components/blogPost/BlogPost";
 
-export default function Blog() {
+const getData = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+    cashe: "force-cache",
+  });
+  if (!res.ok) {
+    throw new Error("No data");
+  }
+
+  return res.json();
+};
+
+export default async function Blog() {
+  const data = await getData();
+
   return (
     <main className={styles.main}>
-      <BlogPost
-        title="Unlocking digital succses With the power of creative strategy"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam iusto
-        voluptates sequi dignissimos excepturi odio. Tenetur molestiae ullam
-        accusantium eveniet molestias at cum nisi ab? Ea eligendi animi itaque
-        quam!"
-        src="https://images.pexels.com/photos/17664144/pexels-photo-17664144/free-photo-of-a-black-and-white-photo-of-a-stream-in-the-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        id="1"
-      />
-      <BlogPost
-        title="Navigating the digital frontier: The art of user experience"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam iusto
-        voluptates sequi dignissimos excepturi odio. Tenetur molestiae ullam
-        accusantium eveniet molestias at cum nisi ab? Ea eligendi animi itaque
-        quam! sequi dignissimos excepturi odio. Tenetur "
-        src="https://images.pexels.com/photos/6714/light-forest-trees-morning.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        id="2"
-      />
-      <BlogPost
-        title="Unlocking digital succses With the power of creative strategy"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam iusto
-        voluptates sequi dignissimos excepturi odio. Tenetur molestiae ullam
-        accusantium eveniet molestias at cum nisi ab? Ea eligendi animi itaque
-        quam!"
-        src="https://images.pexels.com/photos/17664144/pexels-photo-17664144/free-photo-of-a-black-and-white-photo-of-a-stream-in-the-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        id="3"
-      />
-      <BlogPost
-        title="Navigating the digital frontier: The art of user experience"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam iusto
-        voluptates sequi dignissimos excepturi odio. Tenetur molestiae ullam
-        accusantium eveniet molestias at cum nisi ab? Ea eligendi animi itaque
-        quam! sequi dignissimos excepturi odio. Tenetur "
-        src="https://images.pexels.com/photos/6714/light-forest-trees-morning.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        id="4"
-      />
-      <BlogPost
-        title="Unlocking digital succses With the power of creative strategy"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam iusto
-        voluptates sequi dignissimos excepturi odio. Tenetur molestiae ullam
-        accusantium eveniet molestias at cum nisi ab? Ea eligendi animi itaque
-        quam!"
-        src="https://images.pexels.com/photos/17664144/pexels-photo-17664144/free-photo-of-a-black-and-white-photo-of-a-stream-in-the-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        id="5"
-      />
-      <BlogPost
-        title="Navigating the digital frontier: The art of user experience"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam iusto
-        voluptates sequi dignissimos excepturi odio. Tenetur molestiae ullam
-        accusantium eveniet molestias at cum nisi ab? Ea eligendi animi itaque
-        quam! sequi dignissimos excepturi odio. Tenetur "
-        src="https://images.pexels.com/photos/6714/light-forest-trees-morning.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        id="6"
-      />
+      {data.map((item) => {
+        return (
+          <BlogPost
+            title={item.title}
+            desc={item.body}
+            src={
+              "https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            }
+            id={item.id}
+          />
+        );
+      })}
     </main>
   );
 }
