@@ -1,10 +1,18 @@
 "use client";
 
-import { React, useEffect } from "react";
+import { React, useEffect, useState } from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 
-export default function BlogPost(props) {
+export default function BlogPost({ params }) {
+  const [blogItem, setBlogItem] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch(`https://api.escuelajs.co/api/v1/products/${params.id}`)
+      .then((response) => response.json())
+      .then((result) => setBlogItem(result));
+  }, []);
 
   return (
     <div className={styles.container}>
