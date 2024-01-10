@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./page.module.css";
 import Image from "next/image";
 import Hero from "public/hero.png";
@@ -19,7 +17,7 @@ export default function Home() {
         <Button title={"See Out Works"} />
       </div>
       <div className={styles.item}>
-        <Image src={Hero} alt={"heroImg"} className={styles.heroImg} />
+        <Image src={Hero} alt={"heroImg"} className={styles.heroImg} priority />
       </div>
     </main>
   );
