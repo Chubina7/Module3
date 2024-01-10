@@ -2,17 +2,9 @@ import React from "react";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import DarkModeToggler from "../darkModeToggler/DarkModeToggler";
+import Menu from "./menu/Menu";
 
 export default function Navbar() {
-  const links = [
-    { id: 1, title: "Home", url: "/" },
-    { id: 2, title: "Portfolio", url: "/portfolio" },
-    { id: 4, title: "Blog", url: "/blog" },
-    { id: 5, title: "About", url: "/about" },
-    { id: 6, title: "Contact", url: "/contact" },
-    { id: 6, title: "Dashboard", url: "/dashboard" },
-  ];
-
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
@@ -20,11 +12,7 @@ export default function Navbar() {
       </Link>
       <div className={styles.links}>
         <DarkModeToggler />
-        {links.map((link) => (
-          <Link href={link.url} className={styles.eachLink}>
-            {link.title}
-          </Link>
-        ))}
+        <Menu />
         <button className={styles.logOutBtn}>Log Out</button>
       </div>
     </div>

@@ -1,0 +1,11 @@
+.eachLink {
+  cursor: pointer;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in-out;
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
