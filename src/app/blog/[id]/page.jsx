@@ -14,11 +14,13 @@ export default function BlogPost({ params }) {
       .then((result) => setBlogItem(result));
   }, []);
 
+  console.log(blogItem);
+
   return (
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.info}>
-          <h1 className={styles.title}>test</h1>
+          <h1 className={styles.title}>Test</h1>
           <p className={styles.desc}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Distinctio, sunt.
