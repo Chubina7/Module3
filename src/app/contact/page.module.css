@@ -9,7 +9,7 @@
 }
 
 .heading {
-    font-size: 56px;
+  font-size: 56px;
 }
 
 .container {
@@ -58,8 +58,7 @@
 .message {
   width: 100%;
   padding: 15px;
-  font-weight: bold;
-  border: 2px solid black;
+  border: 2px solid grey;
   outline: none;
   background-color: transparent;
 }
