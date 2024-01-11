@@ -2,8 +2,10 @@ import React from "react";
 import styles from "./Button.module.css";
 import Link from "next/link";
 
-export default function Button(props) {
+export default function Button({ href, title }) {
   return (
-      <button className={styles.textBtn}>{props.title}</button>
+    <Link href={href}>
+      <button className={styles.textBtn}>{title}</button>
+    </Link>
   );
 }

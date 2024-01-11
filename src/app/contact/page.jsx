@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Button from "@/components/button/Button";
-import ContactImg from "public/contact.png";
+import ContactImg from "/public/contact.png";
 
 export const metadata = {
   title: 'Contact',
