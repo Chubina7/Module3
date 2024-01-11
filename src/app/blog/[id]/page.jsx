@@ -14,8 +14,6 @@ export default function BlogPost({ params }) {
       .then((result) => setBlogItem(result));
   }, []);
 
-  console.log(blogItem);
-
   return (
     <div className={styles.container}>
       <div className={styles.top}>
